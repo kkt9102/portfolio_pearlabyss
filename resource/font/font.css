@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'notosanskr-bold';
+    src: url(notosanskr-bold.woff2) format('woff2'),
+    url(notosanskr-bold.woff) format('woff');
+}
+.font-weight-b {
+    font-family: 'notosanskr-bold';
+}
+@font-face {
+    font-family: 'notosanskr-regular2';
+    src: url(notosanskr-regular2.woff2) format('woff2'),
+    url(notosanskr-regular2.woff) format('woff');
+}
+.font-weight-r-2 {
+    font-family: 'notosanskr-regular2';
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(roboto-regular.woff2) format('woff2'),
+    url(roboto-regular.woff) format('woff');
+}
+.font-weight-ro {
+    font-family: 'roboto-regular';
+}

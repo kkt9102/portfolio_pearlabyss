@@ -1,0 +1,165 @@
+/* 노말라이즈 */
+body,ul,li,h1,h2,h3,h4,h5,h6,p{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/* 라이브러리 */
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-align-center {
+    text-align: center;
+}
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right;
+}
+.white-space-no {
+    white-space: nowrap;
+}
+.border-box {
+    box-sizing:border-box;
+}
+
+/* display 라이브러리 */
+.block {
+    display: block;
+}  
+.inline-block {
+    display: inline-block;
+}
+.inline {
+    display: inline;
+}
+/* position 라이브러리 */
+.fixed {
+    position: fixed;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.absolute-top {
+    position: absolute;
+    top:0;
+}
+.absolute-bottom {
+    position: absolute;
+    bottom:0;
+}
+.absolute-left {
+    position: absolute;
+    left:0;
+}
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+.absolute-top-center {
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.absolute-bottom-center {
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.absolute-center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* float 라이브러리 */
+.cell {
+    float: left;
+}
+.cell-right {
+    float: right;
+}
+.row::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+/* flex 라이브러리 */
+.flex {
+    display: flex;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.flex-jc-c {
+    justify-content: center;
+}
+.flex-jc-e {
+    justify-content: flex-end;
+}
+.flex-jc-s {
+    justify-content: flex-start;
+}
+.flex-jc-sa {
+    justify-content: space-around;
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+.flex-ai-c {
+    align-items: center;
+}
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap-no {
+    flex-wrap: nowrap;
+}
+.flex-1-0-0 {
+    flex:1 0 0;
+}
+/* height 라이브러리 */
+.height-100p {
+    height: 100%;
+}
+.height-100vh {
+    height: 100vh;
+}
+.height-100vw {
+    height: 100vw;
+}
+.height-100px {
+    height: 100px;
+}
+/* width 라이브러리 */
+.width-100p {
+    width: 100%;
+}
+.width-100vh {
+    width: 100vh;
+}
+.width-100vw {
+    width: 100vw;
+}
+.width-100px {
+    width: 100px;
+}
+/* font-color */
+.color-fff {
+    color: #ffffff;
+}
+.color-000 {
+    color: #000000;
+}
