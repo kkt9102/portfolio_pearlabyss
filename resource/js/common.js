@@ -1,6 +1,3 @@
-var Scrollbar = window.Scrollbar;
-
-Scrollbar.init(document.querySelector('.wrap'));
 
 function sldier(){
     $('.main-slider > .owl-carousel').owlCarousel({
@@ -34,8 +31,53 @@ function has_class(){
         drop_menu_bg.addClass('active');
     })
 };
+function scroll__init(){
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var top = $(window).scrollTop();
+            var $footer_section = $('.footer-coypright').offset().top;
+            var $banner_section = $('.news-section').offset().top;
+            var $notice_section = $('.banner-menu-section').offset().top;
+            if( top > 0 ){
+                $('.top-menu-bar').addClass('active');
+            } else {
+                $('.top-menu-bar').removeClass('active');
+            }
+            if ( top > 150 ){
+                $('.top-move-btn').addClass('active');
+            }
+            else {
+                $('.top-move-btn').removeClass('active');
+            }
+            if ( top > $banner_section - 550 ) {
+                $('.banner-menu-section > nav > ul > li').addClass('active');
+            }
+            else {
+                $('.banner-menu-section > nav > ul > li').removeClass('active');
+            }
+            if ( top > $notice_section + 50) {
+                $('.board-menu-section > nav > ul > li').addClass('active');
+            }
+            else {
+                $('.board-menu-section > nav > ul > li').removeClass('active');
+            }
+            if ( top > $footer_section -1000 ){
+                $('.top-move-btn').css('bottom','10%');
+            }
+            else {
+                $('.top-move-btn').css('bottom','5%');
+            }
+            
+        });
+    });
+};
+function move_btn(){
+    $('.top-move-btn').click(function(){
+        $('html,body').scrollTop('0');
+    });
+};
 
-
+/*
 $(function(){
     $(window).on('mousewheel DOMMouseScroll', function(e) {
     		e.preventDefault();
@@ -55,7 +97,7 @@ $(function(){
         }
     });
 });
-
+*/
 /*
 
 $(function(){
@@ -87,6 +129,8 @@ http://jsfiddle.net/Davidan/rz3vd872/
 
 
 $(function(){
+    move_btn();
     sldier();
     has_class();
+    scroll__init();
 });

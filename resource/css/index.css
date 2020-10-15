@@ -7,11 +7,68 @@
 .font-size-12 {
     font-size: 12px;
 }
-.wrap {
-    height: 100vh;
+/* 스크롤바 커스텀 */
+html,
+body {
+  scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    border-radius:10px;  
+  }
+  body.active::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0);
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+  }
+body {
+  scroll-behavior: smooth;
+}
+/* top-move-btn 커스텀 */
+.top-move-btn {
+    width: 60px;
+    height: 60px;
+    right:2%;
+    bottom:5%;
+    cursor: pointer;
+    z-index: 1000 !important;
+    opacity: 0;
+    transition: bottom .3s;
+}
+.top-move-btn.active {
+    opacity: 1;
+    transition: all .3s;
+}
+.top-move-btn > .icon {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/icn_cm_arrow_up_black.svg) no-repeat 0 0;
+    background-size: contain;
+    width: 54px;
+    height: 54px;
+    border:1.5px inset #000000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.top-move-btn > .icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 105%;
+    height: 105%;
+    background-color: rgba(180, 180, 180, 0.5);
+    transform: translateY(100%);
+    transition: transform 0.2s;
+}
+.top-move-btn:hover > .icon::after {
+    transform: translateY(0%);
+}
 /* top-menu-bar 커스텀 */
+
 .top-menu-bar {
     height: 70px;
     border-bottom: 1px solid rgba(239, 239, 239,0);
@@ -42,7 +99,23 @@
     height: 70px;
     line-height:70px;
 }
+.top-menu-bar > .menu-box-1 {
+    position: relative;
+    z-index: inherit;
+}
 
+.top-menu-bar:hover {
+    height: 360px;
+}
+.top-menu-bar:hover::after {
+    content: "";
+    position: absolute;
+    top:71px;
+    left:0;
+    width: 100%;
+    height: 1px;
+    background: #efefef;
+}
 .top-menu-bar > .menu-box-1 > .hover-menu > li > ul {
     font-size: 14px;
     color: #999999;
@@ -52,7 +125,7 @@
     height: 0;
     margin-top: 18px;
     overflow: hidden;
-    transition: all .3s;
+    transition: all .2s;
     z-index: 1;
 }
 
@@ -271,6 +344,39 @@
 .banner-menu-section > nav {
     padding-left: 20px;
 }
+.banner-menu-section > nav > ul > li {
+    opacity: 0;
+    transform: translateY(20%);
+}
+.banner-menu-section > nav > ul > .corp-info.active {
+    transition: all .3s;
+    transition-duration: 900ms;
+}
+.banner-menu-section > nav > ul > .lab.active {
+    transition: all .3s;
+    transition-duration: 900ms;
+    transition-delay: .1s;
+}
+.banner-menu-section > nav > ul > .culture.active {
+    transition: all .3s;
+    transition-duration: 900ms;
+    transition-delay: .2s;
+}
+.banner-menu-section > nav > ul > .pearlabyss-in.active {
+    transition: all .3s;
+    transition-duration: 900ms;
+    transition-delay: .3s;
+}
+.banner-menu-section > nav > ul > .corp-news.active {
+    transition: all .3s;
+    transition-duration: 900ms;
+    transition-delay: .4s;
+}
+.banner-menu-section > nav > ul > li.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .banner-menu-section > nav > ul > li > a {
     height: 576px;
     overflow: hidden;
@@ -342,6 +448,28 @@
 .board-menu-section > nav > ul > li {
     width: calc(100%/4);
     margin-right:20px;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all .3s
+}
+.board-menu-section > nav > ul > li.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.board-menu-section > nav > ul > .list-1 {
+    transition-duration: 600ms;
+}
+.board-menu-section > nav > ul > .list-2 {
+    transition-delay: .1s;
+    transition-duration: 600ms;
+}
+.board-menu-section > nav > ul > .list-3 {
+    transition-delay: .2s;
+    transition-duration: 600ms;
+}
+.board-menu-section > nav > ul > .list-4 {
+    transition-delay: .3s;
+    transition-duration: 600ms;
 }
 .board-menu-section > nav > ul > li > a > .img {
     width: 100%;
@@ -359,7 +487,7 @@
 }
 .board-menu-section > nav > ul > li > a > .text-box > .title {
     font-size: 14px;
-    padding: 8px 0;
+    padding: 15px 0;
     color: #666;
 }
 .board-menu-section > nav > ul > li > a > .text-box > .sub-title {
@@ -370,6 +498,7 @@
 /* footer-section 커스텀 */
 .footer-section {
     border-top:1px solid rgba(239, 239, 239,1);
+    border-bottom:1px solid rgba(239, 239, 239,1);
     margin-top: 200px;
 }
 .footer-section > .footer-site-map-menu-box {
@@ -405,20 +534,61 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-family: 'notosanskr-bold';
 }
 .footer-section > .footer-sub-menu-box > .menu-box-3 > ul > li > a {
     padding: 5px 0;
 }
-.footer-section > .footer-coypright {
-    border-top:1px solid rgba(239, 239, 239,1);
-    font-family: 'roboto-regular';
-    color:#969696;
+/* footer-coypright 커스텀 */
+.footer-coypright {
+    height: 75px;
 }
-.footer-section > .footer-coypright > .footer-logo {
+.footer-coypright > .logo-copyright  > .text {
+    color:#6a6a6a;
+    font-size: 14px;
+    opacity: .5;
+}
+.footer-coypright > .logo-copyright > .footer-logo {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/cm_bi_black.svg) no-repeat 0 0;
     background-size: contain;
-    width: 120px;
-    height: 19px;
+    width: 125px;
+    height: 25px;
+    margin-right: 3%;
+    margin-left: 12%;
+}
+.footer-coypright >.icon-menu-box > ul {
+    margin-right: 20px;
+}
+.footer-coypright >.icon-menu-box > ul > li {
+    margin: 0 5px;
+}
+.footer-coypright >.icon-menu-box > ul > .facebook > a {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/icn_footer_facebook_round.svg) no-repeat 0 0;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.footer-coypright >.icon-menu-box > ul > .youtube > a {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/icn_footer_youtube_round.svg) no-repeat 0 0;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.footer-coypright >.icon-menu-box > ul > .instagram > a {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/icn_footer_linkedin_round.svg) no-repeat 0 0;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* menu > ul > li > a > .icon 커스텀 */
+li > a > .icon {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/icn_header_new_win.svg) no-repeat 0 0;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    display: inline-block;
 }

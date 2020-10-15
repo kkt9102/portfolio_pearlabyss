@@ -14,22 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- smooth scroller -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.3/smooth-scrollbar.min.js"></script>
+    
     <!-- styleSheet -->
     <link rel="stylesheet" href="resource/font/font.css">
     <link rel="stylesheet" href="resource/css/lib.css">
     <link rel="stylesheet" href="resource/css/index.css">
+    <script src="resource/js/common.js"></script>
 </head>
 
 <body>
+    
     <!-- top-menu-bar HTML -->
     <div class="top-menu-bar fixed width-100p">
         <nav class="menu-box-1 con flex flex-ai-c flex-jc-sb color-fff">
             <div class="logo">
                 <a href="#" class="block"></a>
             </div>
-            <ul class="hover-menu flex flex-jc-sa font-weight-b text-align-center">
+            <ul class="hover-menu flex flex-jc-sa font-weight-b text-align-center relative">
                 <li class="flex flex-jc-c"><span>소개</span>
                     <ul>
                         <li><a href="#" class="block">펄어비스 소개</a></li>
@@ -63,7 +64,7 @@
                 <li class="flex flex-jc-c"><span>채용</span>
                     <ul>
                         <li><a href="#" class="block">채용소개</a></li>
-                        <li><a href="#" class="block">지원하기<span class="icon"></span></a></li>
+                        <li><a href="#" class="block flex flex-ai-c"><span class="text">지원하기</span><span class="icon"></span></a></li>
                     </ul>
                 </li>
                 <li class="flex flex-jc-c"><span>투자정보</span>
@@ -82,8 +83,12 @@
             </ul>
         </nav>
     </div>
-    <!-- body start -->
-    <div class="wrap">
+    <div class="top-menu-bar-1024 fixed width-100p"></div>
+    <!-- top-move-btn HTML -->
+    <div class="top-move-btn fixed">
+        <div class="icon relative"></div>
+    </div>
+
         <!-- main-slider HTML -->
         <div class="main-slider relative">
             <div class="owl-carousel owl-theme">
@@ -217,7 +222,7 @@
                             </div>
                             <div class="text-box">
                                 <div class="title font-weight-r-2">펄어비스 소식</div>
-                                <div class="sub-title font-weight-r-2">펄어비스의 사회공헌 활동</div>
+                                <div class="sub-title font-weight-r-2">펄어비스의&ensp;사회공헌&ensp;활동</div>
                             </div>
                         </a>
                     </li>
@@ -229,7 +234,7 @@
                             </div>
                             <div class="text-box">
                                 <div class="title font-weight-r-2">펄어비스 소식</div>
-                                <div class="sub-title font-weight-r-2">펄어비스&ensp;&nbsp;신규입사자를 위한 웰컴키트</div>
+                                <div class="sub-title font-weight-r-2">펄어비스&ensp;신규입사자를&ensp;위한&ensp;웰컴키트</div>
                             </div>
                         </a>
                     </li>
@@ -241,7 +246,7 @@
                             </div>
                             <div class="text-box">
                                 <div class="title font-weight-r-2">펄어비스인</div>
-                                <div class="sub-title font-weight-r-2">생산직 근로자에서 게임 개발자로, 서른 한 살에 시작된 인생 2막</div>
+                                <div class="sub-title font-weight-r-2">생산직&ensp;근로자에서&ensp;게임&ensp;개발자로,&ensp;서른&ensp;한&ensp;살에&ensp;시작된&ensp;인생&ensp;2막</div>
                             </div>
                         </a>
                     </li>
@@ -253,7 +258,7 @@
                             </div>
                             <div class="text-box">
                                 <div class="title ">펄어비스 소식</div>
-                                <div class="sub-title font-weight-r-2">시그라프(SIGGRAPH)에서 차세대 엔진 소개</div>
+                                <div class="sub-title font-weight-r-2">시그라프(SIGGRAPH)에서&ensp;차세대&ensp;엔진&ensp;소개</div>
                             </div>
                         </a>
                     </li>
@@ -293,7 +298,7 @@
                 <ul class="flex-1-0-0">
                     <div class="title">채용</div>
                     <li><a href="#" class="block">채용소개</a></li>
-                    <li><a href="#" class="block"><span class="text">지원하기</span><span class="icon"></span></a></li>
+                    <li><a href="#" class="block flex flex-ai-c"><span class="text">지원하기</span><span class="icon"></span></a></li>
                 </ul>
                 <ul class="flex-1-0-0">
                     <div class="title">투자정보</div>
@@ -318,22 +323,31 @@
                             <a href="#" class="block">개인정보 처리방침</a>
                         </li>
                         <li class="flex-1-0-0">
-                            <a href="#" class="block"><span class="text">펄어비스 스토어</span><span class="icon"></span></a>
+                            <a href="#" class="block flex flex-ai-c"><span class="text">펄어비스 스토어</span><span class="icon"></span></a>
                         </li>
                         <li class="flex-1-0-0">
-                            <a href="#" class="block"><span class="text">게임 고객센터</span><span class="icon"></span></a>
+                            <a href="#" class="block flex flex-ai-c"><span class="text">게임 고객센터</span><span class="icon"></span></a>
                         </li>
                         <li class="flex-1-0-0 dummy"></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="footer-coypright flex">
-                <div class="footer-logo"></div>
-                <div class="text">Copyright © Pearl Abyss Corp. All Rights Reserved</div>
-            </div>
+            </div>     
         </div>
-    </div>
-    <script src="resource/js/common.js"></script>
+        <div class="footer-coypright flex flex-jc-c flex-ai-c con">
+                <div class="logo-copyright flex flex-jc-c flex-ai-c flex-1-0-0">
+                    <div class="footer-logo"></div>
+                    <div class="text font-weight-r-2">Copyright © Pearl Abyss Corp. All Rights Reserved</div>
+                </div>
+                <div class="icon-menu-box">
+                    <ul class="flex">
+                        <li class="facebook"><a href="#" class="block"></a></li>
+                        <li class="youtube"><a href="#" class="block"></a></li>
+                        <li class="instagram"><a href="#" class="block"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+    
 </body>
 
 </html>
