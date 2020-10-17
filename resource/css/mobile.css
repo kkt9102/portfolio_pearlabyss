@@ -1,0 +1,129 @@
+/* mobile-top-menu-bar 커스텀 */
+
+.mobile-menu-bar {
+    z-index: 1000 !important;
+    transition: all .3s;
+}
+.mobile-menu-bar.active {
+    background: #ffffff;
+    border-bottom:1px solid #efefef;
+}
+.mobile-menu-bar > .mobile-menu-box-1 {
+    padding:19px 2.5%;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn {
+    width: 40px;
+    height: 20px;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn > div {
+    width: 32px;
+    height: 4px;
+    margin-left: 4px;
+    background: #ffffff;
+    position: absolute;
+}
+.mobile-menu-bar.active > .mobile-menu-box-1 > .bars-btn > div {
+    background: #000;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn > div:first-child {
+    top:0;
+    transition: top .2s, transform .2s;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn > div:nth-child(2) {
+    top:40%;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn > div:last-child {    
+    top:80%;
+    transition: top .2s, transform .2s;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn.active > div:first-child {
+    top:40%;
+    transform: rotate(45deg);
+    transition: transform .2s;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn.active > div:nth-child(2) {
+    opacity: 0;
+    transition: opacity .2s;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .bars-btn.active > div:last-child {
+    top:40%;
+    transform: rotate(-45deg);
+    transition: transform .2s;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .logo > a {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/cm_bi_white.svg) no-repeat 0 0;
+    background-size: 172px auto;
+    height: 20px;
+    width: 172px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .2s;
+}
+.mobile-menu-bar.active > .mobile-menu-box-1 > .logo > a {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/cm_bi_black.svg) no-repeat 0 0;
+    background-size: 172px auto;
+    height: 20px;
+    width: 172px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobile-menu-bar > .mobile-menu-box-1 > .lang-change > .lang-icon {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/m_icn_lang_white.svg)no-repeat 0 0;
+    background-size: contain;
+    width: 29px;
+    height: 29px;
+}
+.mobile-menu-bar.active > .mobile-menu-box-1 > .lang-change > .lang-icon {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/m_icn_lang.svg)no-repeat 0 0;
+    background-size: contain;
+    width: 29px;
+    height: 29px;
+}
+
+
+/* mobile-banner-section 커스텀 */
+.mobile-banner-section {
+    margin-top: 130px;
+}
+.mobile-banner-section > nav > ul {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/t_spr_main_category_bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-banner-section > nav > ul > .up {
+    width: calc(100%/2);
+    height: 41.4vw;
+}
+.mobile-banner-section > nav > ul > .down {
+    width: calc(100%/3);
+    height: 41.4vw;
+}
+.mobile-banner-section > nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+}
+.mobile-banner-section > nav > ul > li > a > .menu-info > .text-box {
+    width: 100%;
+}
+.mobile-banner-section > nav > ul > li > a > .menu-info > .text-box > *{
+    left:50%;
+    transform: translateX(-50%);
+    color:#ffffff;
+    white-space: nowrap;
+}
+.mobile-banner-section > nav > ul > li > a > .menu-info > .text-box > .title {
+    font-size: 26px;
+    margin-top:30%
+}
+.mobile-banner-section > nav > ul > li > a > .menu-info > .text-box > .sub-title {
+    font-size: 20px;
+    margin-top:40%;
+}
+.mobile-banner-section > nav > ul > .down > a > .menu-info > .text-box > .title {
+    margin-top:50%
+}
+.mobile-banner-section > nav > ul > .down > a > .menu-info > .text-box > .sub-title {
+    margin-top:65%;
+}

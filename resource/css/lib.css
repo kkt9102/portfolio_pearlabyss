@@ -118,6 +118,9 @@ a {
 .flex-jc-sb {
     justify-content: space-between;
 }
+.flex-jc-se {
+    justify-content: space-evenly;
+}
 .flex-ai-c {
     align-items: center;
 }
@@ -129,6 +132,9 @@ a {
 }
 .flex-wrap-no {
     flex-wrap: nowrap;
+}
+.flex-dc-c {
+    flex-direction: column;
 }
 .flex-1-0-0 {
     flex:1 0 0;

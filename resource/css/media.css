@@ -1,0 +1,15 @@
+
+@media (max-width:1024px) {
+    .pc-view {
+        display: none;
+    }
+    .mobile-menu-bar {
+        display: block;
+    }
+    .mobile-banner-section {
+        display: block;
+    }
+    .news-section {
+        padding-left: 40px;
+    }
+}
