@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- styleSheet -->
     <link rel="stylesheet" href="resource/font/font.css">
     <link rel="stylesheet" href="resource/css/lib.css">
@@ -93,12 +95,22 @@
                 <div></div>
                 <div></div>
             </div>
+            <nav class="bars-menu-box absolute">
+                <ul class="font-weight-b">
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">소개</span><span class="arrow"></span></a></li>
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">게임</span><span class="arrow"></span></a></li>
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">미디어</span><span class="arrow"></span></a></li>
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">문화</span><span class="arrow"></span></a></li>
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">채용</span><span class="arrow"></span></a></li>
+                    <li class="flex flex-jc-sb"><a class="block"><span class="text">투자정보</span><span class="arrow"></span></a></li>
+                </ul>
+            </nav>
             <div class="logo"><a href="#" class="block"></a></div>
             <nav class="lang-change">
                 <div class="lang-icon"></div>
-                <ul>
-                    <li><a href="#" class="block"></a></li>
-                    <li><a href="#" class="block"></a></li>
+                <ul class="absolute font-weight-b">
+                    <li class="active"><a href="#" class="block">KOR</a></li>
+                    <li><a href="#" class="block">ENG</a></li>
                 </ul>
             </nav>
         </div>
@@ -321,7 +333,7 @@
                         </div>
                     </a>
                 </li>
-                
+
             </ul>
         </nav>
     </div>
@@ -335,9 +347,9 @@
                             <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/SAS8EZ822ISHH58320200909065518833.400x225.jpg"
                                 alt="">
                         </div>
-                        <div class="text-box">
-                            <div class="title font-weight-r-2">펄어비스 소식</div>
-                            <div class="sub-title font-weight-r-2">펄어비스의&ensp;사회공헌&ensp;활동</div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">펄어비스의&ensp;사회공헌&ensp;활동</div>
                         </div>
                     </a>
                 </li>
@@ -347,9 +359,9 @@
                             <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/O7ANE2O61LKJX4RS20200908133249843.400x225.jpg"
                                 alt="">
                         </div>
-                        <div class="text-box">
-                            <div class="title font-weight-r-2">펄어비스 소식</div>
-                            <div class="sub-title font-weight-r-2">펄어비스&ensp;신규입사자를&ensp;위한&ensp;웰컴키트</div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">펄어비스&ensp;신규입사자를&ensp;위한&ensp;웰컴키트</div>
                         </div>
                     </a>
                 </li>
@@ -359,9 +371,9 @@
                             <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/SLWSRXQKFTN1WVVH20200908134418474.400x225.jpg"
                                 alt="">
                         </div>
-                        <div class="text-box">
-                            <div class="title font-weight-r-2">펄어비스인</div>
-                            <div class="sub-title font-weight-r-2">
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스인</div>
+                            <div class="sub-title">
                                 생산직&ensp;근로자에서&ensp;게임&ensp;개발자로,&ensp;서른&ensp;한&ensp;살에&ensp;시작된&ensp;인생&ensp;2막</div>
                         </div>
                     </a>
@@ -372,9 +384,9 @@
                             <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/RT020N8OB7B5VS8220200909090351782.400x225.jpg"
                                 alt="">
                         </div>
-                        <div class="text-box">
-                            <div class="title ">펄어비스 소식</div>
-                            <div class="sub-title font-weight-r-2">시그라프(SIGGRAPH)에서&ensp;차세대&ensp;엔진&ensp;소개</div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">시그라프(SIGGRAPH)에서&ensp;차세대&ensp;엔진&ensp;소개</div>
                         </div>
                     </a>
                 </li>
@@ -382,23 +394,150 @@
         </nav>
     </div>
     <div class="mobile-board-menu-section">
-        <div class="owl-carousel"></div>   
+        <div class="owl-carousel">
+                <li class="list-1-1">
+                    <a href="#" class="block">
+                        <div class="img">
+                            <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/SAS8EZ822ISHH58320200909065518833.400x225.jpg"
+                                alt="">
+                        </div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">펄어비스의&ensp;사회공헌&ensp;활동</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-1-2">
+                    <a href="#" class="block">
+                        <div class="img">
+                            <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/O7ANE2O61LKJX4RS20200908133249843.400x225.jpg"
+                                alt="">
+                        </div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">펄어비스&ensp;신규입사자를&ensp;위한&ensp;웰컴키트</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-2-1">
+                    <a href="#" class="block">
+                        <div class="img">
+                            <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/SLWSRXQKFTN1WVVH20200908134418474.400x225.jpg"
+                                alt="">
+                        </div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스인</div>
+                            <div class="sub-title">
+                                생산직&ensp;근로자에서&ensp;게임&ensp;개발자로,&ensp;서른&ensp;한&ensp;살에&ensp;시작된&ensp;인생&ensp;2막</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-2-2">
+                    <a href="#" class="block">
+                        <div class="img">
+                            <img src="https://kkt9102.github.io/img1/blog/article/portfolio/pearlabyss/RT020N8OB7B5VS8220200909090351782.400x225.jpg"
+                                alt="">
+                        </div>
+                        <div class="text-box font-weight-r-2">
+                            <div class="title">펄어비스 소식</div>
+                            <div class="sub-title">시그라프(SIGGRAPH)에서&ensp;차세대&ensp;엔진&ensp;소개</div>
+                        </div>
+                    </a>
+                </li>
+        </div>
     </div>
     <!-- footer-section HTML -->
-    <div class="footer-section">
-        <div class="footer-site-map-menu-box con">
-            <div class="menu-box-2 flex flex-jc-se font-weight-r-2">
-                <nav class="menu-item-1 flex flex-dc-c flex-jc-sb">
+    <footer class="pc-view">
+        <div class="footer-section">
+            <div class="footer-site-map-menu-box con">
+                <div class="menu-box-2 flex flex-jc-se font-weight-r-2">
+                    <nav class="menu-item-1 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">소개</a></li>
+                            <li><a href="#" class="block">펄어비스 소개</a></li>
+                            <li><a href="#" class="block">연구소</a></li>
+                        </ul>
+                        <div class="bottom-menu font-weight-b"><a href="#" class="block">광고/제휴 문의</a></div>
+                    </nav>
+                    <nav class="menu-item-2 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">게임</a></li>
+                            <li><a href="#" class="block">검은사막</a></li>
+                            <li><a href="#" class="block">검은사막 모바일</a></li>
+                            <li><a href="#" class="block">섀도우 아레나</a></li>
+                            <li><a href="#" class="block">붉은사막</a></li>
+                            <li><a href="#" class="block">도깨비</a></li>
+                            <li><a href="#" class="block">플랜 8</a></li>
+                        </ul>
+                        <div class="bottom-menu font-weight-b"><a href="#" class="block">기업윤리 신고센터</a></div>
+                    </nav>
+                    <nav class="menu-item-3 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">미디어</a></li>
+                            <li><a href="#" class="block">보도자료</a></li>
+                            <li><a href="#" class="block">미디어 행사</a></li>
+                        </ul>
+                        <div class="bottom-menu font-weight-b"><a href="#" class="block">개인정보 처리방침</a></div>
+                    </nav>
+                    <nav class="menu-item-4 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">문화</a></li>
+                            <li><a href="#" class="block">기업문화</a></li>
+                            <li><a href="#" class="block">복지</a></li>
+                            <li><a href="#" class="block">펄어비스인</a></li>
+                            <li><a href="#" class="block">펄어비스 소식</a></li>
+                        </ul>
+                        <div class="bottom-menu font-weight-b"><a href="#" class="block"><span class="text">펄어비스
+                                    스토어</span><span class="icon"></span></a></div>
+                    </nav>
+                    <nav class="menu-item-5 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">채용</a></li>
+                            <li><a href="#" class="block">채용소개</a></li>
+                            <li><a href="#" class="block"><span class="text">지원하기</span><span class="icon"></span></a></li>
+                        </ul>
+                        <div class="bottom-menu font-weight-b"><a href="#" class="block"><span class="text">게임
+                                    고객센터</span><span class="icon"></span></a></div>
+                    </nav>
+                    <nav class="menu-item-6 flex flex-dc-c flex-jc-sb">
+                        <ul>
+                            <li class="title font-weight-b"><a href="#" class="block">투자정보</a></li>
+                            <li><a href="#" class="block">기업지배구조</a></li>
+                            <li><a href="#" class="block">주가정보</a></li>
+                            <li><a href="#" class="block">재무정보</a></li>
+                            <li><a href="#" class="block">공시·공고</a></li>
+                            <li><a href="#" class="block">IR 자료</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer-coypright flex flex-jc-c flex-ai-c con">
+            <div class="logo-copyright flex flex-jc-c flex-ai-c flex-1-0-0">
+                <div class="footer-logo"></div>
+                <div class="text font-weight-r-2">Copyright © Pearl Abyss Corp. All Rights Reserved</div>
+            </div>
+            <div class="icon-menu-box">
+                <ul class="flex">
+                    <li class="facebook"><a href="#" class="block"></a></li>
+                    <li class="youtube"><a href="#" class="block"></a></li>
+                    <li class="instagram"><a href="#" class="block"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- mobile-footer HTML -->
+    <footer class="mobile-footer-section">
+        <nav class="mobile-menu-box-2">
+            <ul class="font-weight-r-2">
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">소개</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">소개</a></li>
                         <li><a href="#" class="block">펄어비스 소개</a></li>
                         <li><a href="#" class="block">연구소</a></li>
                     </ul>
-                    <div class="bottom-menu font-weight-b"><a href="#" class="block">광고/제휴 문의</a></div>
-                </nav>
-                <nav class="menu-item-2 flex flex-dc-c flex-jc-sb">
+                </li>
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">게임</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">게임</a></li>
                         <li><a href="#" class="block">검은사막</a></li>
                         <li><a href="#" class="block">검은사막 모바일</a></li>
                         <li><a href="#" class="block">섀도우 아레나</a></li>
@@ -406,64 +545,55 @@
                         <li><a href="#" class="block">도깨비</a></li>
                         <li><a href="#" class="block">플랜 8</a></li>
                     </ul>
-                    <div class="bottom-menu font-weight-b"><a href="#" class="block">기업윤리 신고센터</a></div>
-                </nav>
-                <nav class="menu-item-3 flex flex-dc-c flex-jc-sb">
+                </li>
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">미디어</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">미디어</a></li>
                         <li><a href="#" class="block">보도자료</a></li>
                         <li><a href="#" class="block">미디어 행사</a></li>
                     </ul>
-                    <div class="bottom-menu font-weight-b"><a href="#" class="block">개인정보 처리방침</a></div>
-                </nav>
-                <nav class="menu-item-4 flex flex-dc-c flex-jc-sb">
+                </li>
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">문화</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">문화</a></li>
                         <li><a href="#" class="block">기업문화</a></li>
                         <li><a href="#" class="block">복지</a></li>
                         <li><a href="#" class="block">펄어비스인</a></li>
                         <li><a href="#" class="block">펄어비스 소식</a></li>
                     </ul>
-                    <div class="bottom-menu font-weight-b"><a href="#" class="block"><span class="text">펄어비스 스토어</span><span
-                                class="icon"></span></a></div>
-                </nav>
-                <nav class="menu-item-5 flex flex-dc-c flex-jc-sb">
+                </li>
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">채용</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">채용</a></li>
                         <li><a href="#" class="block">채용소개</a></li>
                         <li><a href="#" class="block"><span class="text">지원하기</span><span class="icon"></span></a></li>
                     </ul>
-                    <div class="bottom-menu font-weight-b"><a href="#" class="block"><span class="text">게임 고객센터</span><span
-                                class="icon"></span></a></div>
-                </nav>
-                <nav class="menu-item-6 flex flex-dc-c flex-jc-sb">
+                </li>
+                <li class="drop-menu"><a class="block flex flex-jc-sb"><span class="text">투자정보</span><span class="plus-icon"></span></a>
                     <ul>
-                        <li class="title font-weight-b"><a href="#" class="block">투자정보</a></li>
                         <li><a href="#" class="block">기업지배구조</a></li>
                         <li><a href="#" class="block">주가정보</a></li>
                         <li><a href="#" class="block">재무정보</a></li>
                         <li><a href="#" class="block">공시·공고</a></li>
                         <li><a href="#" class="block">IR 자료</a></li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <div class="footer-coypright flex flex-jc-c flex-ai-c con">
-        <div class="logo-copyright flex flex-jc-c flex-ai-c flex-1-0-0">
-            <div class="footer-logo"></div>
-            <div class="text font-weight-r-2">Copyright © Pearl Abyss Corp. All Rights Reserved</div>
-        </div>
-        <div class="icon-menu-box">
-            <ul class="flex">
+                </li>
+                <li><a href="#" class="block">광고/제휴문의</a></li>
+                <li><a href="#" class="block">기업윤리 신고센터</a></li>
+                <li><a href="#" class="block">개인정보 처리방침</a></li>
+                <li><a href="#" class="block"><span class="text">펄어비스 스토어</span><span class="icon"></span></a></li>
+                <li><a href="#" class="block"><span class="text">게임 고객센터</span><span class="icon"></span></a></li>
+            </ul>
+        </nav>
+        <nav class="icon-menu-box">
+            <ul class="flex flex-jc-c">
                 <li class="facebook"><a href="#" class="block"></a></li>
                 <li class="youtube"><a href="#" class="block"></a></li>
                 <li class="instagram"><a href="#" class="block"></a></li>
             </ul>
+        </nav>
+        <div class="bottom-copy-right flex flex-dc-c text-align-center">
+            <div class="bottom-logo"><a href="" class="block"></a></div>
+            <div class="copy-right-text font-weight-r-2">Copyright © Pearl Abyss Corp. All Rights Reserved</div>
         </div>
-    </div>
-
-
+    </footer>
 </body>
 
 </html>

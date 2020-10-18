@@ -24,7 +24,13 @@ function sldier(){
         }
     });
     $('.mobile-board-menu-section > .owl-carousel').owlCarousel({
-
+        loop:true,
+        margin:0,
+        autoPlay:false,
+        mouseDrag:true,
+        nav:false,
+        dot:true,
+        items:2,
     });
 };
 function has_class(){
@@ -33,6 +39,15 @@ function has_class(){
 
         drop_menu_bg.addClass('active');
     })
+    $('.mobile-footer-section > .mobile-menu-box-2 > ul > .drop-menu').click(function(){
+        var $drop_menu = $(this);
+        if ($drop_menu.hasClass('active')){
+            $drop_menu.removeClass('active');
+        }
+        else {
+            $drop_menu.addClass('active');
+        };
+    });
 };
 function scroll__init(){
     $(document).ready(function(){

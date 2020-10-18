@@ -8,7 +8,8 @@
     font-size: 12px;
 }
 .mobile-menu-bar,
-.mobile-banner-section  {
+.mobile-banner-section,
+.mobile-board-menu-section  {
     display: none;
 }
 /* 스크롤바 커스텀 */

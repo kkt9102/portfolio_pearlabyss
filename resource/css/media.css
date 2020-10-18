@@ -3,10 +3,9 @@
     .pc-view {
         display: none;
     }
-    .mobile-menu-bar {
-        display: block;
-    }
-    .mobile-banner-section {
+    .mobile-menu-bar,
+    .mobile-banner-section,
+    .mobile-board-menu-section {
         display: block;
     }
     .news-section {
